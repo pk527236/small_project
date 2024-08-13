@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+   height: 100vh;
+   width: 100vw; 
+   background: rgb(143,171,167);
+   background: linear-gradient(0deg, rgba(143,171,167,0.9585959383753502) 15%, rgba(228,219,201,1) 79%);
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+
+#nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 45px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,142,166,1) 35%, rgba(0,82,255,1) 53%);
+    padding:14px; 
+}
+#section1 h2{
+    color: white;
+    /* font-size: large; */
+}
+#section2 span a{
+    color: white;
+    font-size:1.5rem;
+    text-decoration: none;
+    
+}
+#section2{
+    display: flex;
+    /* justify-content:space-between; */
+    gap:0.8rem;
+}
+.footerBox{
+    display: flex;
+    min-height:10%;
+    background-color: rgba(85, 107, 107, 0.799);
+    justify-content: center;
+    align-items: center;
+}
+.footerBox p{
+    font-size: 1.5rem;
+    color: white;
+}
+.contentbox{
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 15rem;
+    /* padding: 5rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow:  5px 3px 8px rgb(56, 51, 51);
+
+}
+.cont1{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    /* justify-content: center;
+    align-items: center; */
+}
+.cont2{
+    display: flex;
+    justify-content: space-around;
+}
+.leftbox{
+    margin:1rem;
+    /* padding:0.1rem; */
+    /* display:flex; */
+
+}
+img{
+    height:200px;
+    width:200px;
+    border-radius: 2rem;
+}
+.rightbox{
+    padding:10px;
+}
+img:hover{
+    transition: all 0.6s linear 0s;
+    box-shadow: 1px 1px 15px black;
+
+    transform: scale(0.9);
+}
+.rightBox img{
+    height: 400px;
+    border-radius: 20px;
+
+
+}
+.leftbox h2{
+    text-shadow: 1px 1px 1px rgb(175, 130, 130), 0 0 1em rgb(141, 141, 159), 0 0 0.2em rgb(176, 176, 200);
+}
+.leftbox h3{
+    margin-left:5px;
+    color: rgb(107, 95, 95);
+}
+.leftbox ul{
+    margin-left: 2rem;
+}
+.leftbox ol{
+    margin-left: 2rem;
+
+}
+.rightbox .overlay{
+    color: beige;
+    position: relative;
+    bottom: 7rem;
+    left: 2rem;
+    /* box-shadow: 1px 1px 15px black; */
+    /* overflow-x: none; */
+     opacity:0;
+     transition: all 0.3s linear 0s;
+     color: rgb(246, 246, 246);
+     font-size: larger;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+
+
